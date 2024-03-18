@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXa5usnlhbP0aeMphz32oFXOU_Y4STsveItw&usqp=CAU');
+            background-position: center;
+            background-size: cover;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: beige;
+        }
+
+        /* Glassmorphism card effect */
+        .card {
+            backdrop-filter: blur(1px) saturate(122%);
+            -webkit-backdrop-filter: blur(1px) saturate(122%);
+            background-color: rgba(255, 255, 255, 0.46);
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="vh-100">
+        <div class="container py-3 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card shadow-lg" style="border-radius: 15px;">
+                        <div class="card-body p-3 p-md-4">
+                            <h2 class=" pb-md-0 mb-md-4 text-decoration-underline">Login Page</h2>
+                            <form method="post" action="/views/EnterOtp.ejs">
+                                <div class="form-outline mb-3 fs-4 ">
+                                    <label class="form-label" for="form3Example1q">UserName</label>
+                                    <input type="text" name="username" id="form3Example1q" class="form-control" />
+                                </div>
+
+
+                                <div class="form-outline mb-3 fs-4">
+                                    <label class="form-label" for="form3Example1q">Otp</label>
+                                    <input type="number" name="otp" id="form3Example1q" class="form-control" />
+                                </div>
+
+
+                                <button type="submit" class="btn btn-success btn-lg mb-1">
+                                    LogIn
+                                </button>
+
+                                <button class="btn btn-success btn-lg mb-1">
+                                    <a href="../views/ForgotPassword.ejs" target="_blank" rel="noopener noreferrer">
+                                        Next Page
+                                    </a>
+                                </button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
